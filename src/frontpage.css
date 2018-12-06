@@ -1,0 +1,820 @@
+/* FrontPage CSS */
+
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./Images/background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+
+  .background-video {
+    width: 100%;
+    height: 80vh;
+    object-fit: fill;
+  }
+  .videoButtonDiv {
+    transform: translateY(-75px) !important;
+    position: absolute !important;
+    bottom: 100px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .videoButton {
+    width: 130px !important;
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+  .videoButtonText {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frontPageVideo {
+    /* min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px; */
+    margin-top: 140px;
+    height: 400px;
+    width: 95%;
+  }
+
+  .centerAlignerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font: normal normal normal 30px/1.4em proxima-n-w01-reg,sans-serif;
+    font-weight: bolder;
+  }
+  .frontPageAttraction {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .frontPageAttraction:before {
+    width: 100%;
+    background: url("./Images/ourwork.jpg");
+    background-size: cover;
+    background-position: center;
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+  .frontTitle {
+    font-size: 35px;
+  }
+
+  .frontPageAttractionText {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  .titleButton {
+    width: 150px;
+
+  }
+  .feeSectionButton {
+    width: 85%;
+    height: 300px;
+    color: white;
+    font-family: "Gill Sans MT";
+    z-index: 1;
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+  .feeSectionButton::before {
+    content: "";
+    background-color: linear-gradient(to top right, rgb(48,48,48), black);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+  .feeSectionTextOverlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .frontPageIntroDiv {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .frontPageIntroSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .frontPageHeadingText {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+  }
+  
+  .drFajardoFrontPicture {
+    width: 80%;
+    height: 400px;
+  }
+  
+  .frontPageButtonCarouselDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
+  .frontPageMap {
+    width: 100% !important;
+    height: 400px !important; 
+  }
+  
+  .whyChooseLVECarouselImage {
+    width: 100% !important;
+    height: 350px !important;
+
+  }
+  
+  .carousel-item-active {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .carousel-inner {
+    /*IPHONES AND SAFARI WHY */
+    height: 100% !important;
+  }
+  .custom-tag {
+    height: 100% !important;
+  }
+  
+  .imagePlaceholder {
+    height: 20%;
+    border: 1px solid white;
+    color: white;
+  }
+  .frontPageButtonsDiv {
+    height: 350px;
+    margin: 30px;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+    grid-template-areas: 
+    "Button1 Button2"
+    "Button3 Button4"
+  }
+  .frontPageButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .frontPageButton:hover {
+    background-color: rgb(0, 0, 163);
+    transition-duration: 0.45s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+  
+  }
+  .button1 {
+    grid-area: Button1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button1div {
+    background-color: #003da5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button2 {
+    grid-area: Button2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button2div {
+    background-color: #3364b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button3 {
+    grid-area: Button3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  .button3div {
+    background-color: #3364b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  .button4 {
+    grid-area: Button4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .button4div {
+    background-color: #003da5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+  }
+  
+  .whyChooseLVESection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frontPageButtonText{
+    color: white !important;
+  }
+
+  .oddButtonIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .frontPageButton {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .whyChooseLVETitle {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .whyChooseLVEUnderline {
+    margin-top: 10px;
+    width: 30%;
+    border-bottom: 3px solid #3967c1;
+  }
+  
+  .paddedTitle {
+    padding-top: 5px;
+  }
+  
+  .paddedText {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* end FrontPage CSS */
+
+  /*Link Thumbnails CSS */
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(255, 239, 239, 0.876);
+    border-top: 50px solid rgb(25,25,25);
+  }
+  .socialMedia::before {
+    content: "";
+    background: url("./Images/staffphoto.JPG");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .socialMediaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+  }
+
+  .socialMediaTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .linkThumbnailHolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .linkThumbnailDiv {
+    background-color: rgb(25,25,25);
+    border-radius: 50%;
+    padding: 20px;
+    color: white !important;
+  }
+
+  .linkThumbnailDiv:hover {
+    opacity: 0.65;
+    transition-duration: 0.55s;
+  }
+
+  .linkThumbnail {
+    z-index: 100;
+  }
+
+  .twitter {
+    background-color: #55ACEE
+  }
+
+  .facebook {
+    background-color: #3B5998;
+   
+  }
+  
+  .youtube {
+    background-color: #ff0000
+  }
+  .instagram {
+      background:
+        radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    
+  }
+
+  /* end Link Thumbnails CSS */
+/* FrontCarousel CSS */
+
+.carouselPictures {
+    width: 100%;
+    height: 100%;
+  }
+  .carouselContainer {
+    height: 400px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  /* end FrontCarousel CSS */
+
+/*Fee Section CSS */
+
+.feeSectionThumbnailDiv {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+  }
+  
+.buttonHeading {
+  font-size: 2.0rem;
+  text-shadow: 1.5px 1.5px rgb(25,25,25);
+}
+
+.feeSectionButton {
+  width: 70%;
+  height: 300px;
+  color: white;
+  font-family: 'Gill Sans MT', sans-serif !important;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+
+.feeSectionButton::before {
+  content: "";
+  background-color: rgb(48, 48, 48);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.feeSectionImageOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feeSectionImageOverlay:hover {
+  opacity: 1;
+
+}
+
+/* testimonial Section */
+.blockMain {
+  width: 100%;
+}
+.blockBar {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(25,25,25);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialThumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.testimonialThumbnailDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.testimonialThumbnailDiv::before {
+  content: "";
+  background: url('./Images/setuproom.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  margin-bottom: 80px;
+}
+.blockHeader {
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: whitesmoke;
+  line-height: 100%;
+  padding-top: 10px;
+  
+}
+/* End testimonial */
+
+/* Front Page Services Main */
+
+.frontPageServicesMain {
+  width: 100%;
+  height: 850px;
+  background-color: white;
+  padding-top: -40px;
+  padding-bottom: 80px;
+}
+.frontPageServicesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.frontPageService {
+  display: flex;
+  width: 95%;
+  height: 400px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 40px 100px 40px;
+  z-index: 1;
+  position: relative;
+
+}
+
+.servicesButtonDiv {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.servicesButton {
+  width: 70%;
+  height: 300px;
+  color: white;
+  font-family: 'Gill Sans MT', sans-serif !important;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.servicesButton::before {
+  content: "";
+  background-color: linear-gradient(to top right, rgb(48,48,48), black);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.topService {
+  /*  this is so inefficient.... */
+  margin-top: 50px;
+}
+
+
+
+/*End Fee Section CSS */
+
+
+  @media (min-width: 650px){
+
+    .background-video {
+      height: 85vh;
+    }
+    .frontPageVideo {
+      /* height: 85vh; */
+      height: 75vh;
+    }
+    .videoButtonDiv {
+      transform: translateY(50px) !important;
+      bottom: 120px !important;
+    }
+
+    .drFajardoFrontPicture {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 650px){
+/* frontPage CSS */
+
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font: normal normal normal 50px/1.4em proxima-n-w01-reg,sans-serif;
+  }
+  .frontTitle {
+    font-size: 45px;
+  }
+  .frontSubtitle {
+    font-size: 30px;
+  }
+
+  .frontPageAttraction {
+    height: 85vh;
+  }
+  .frontPageAttraction:before {
+    height: 85vh;
+  }
+.frontPageIntroDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0px;
+    min-height: 550px;
+  }
+
+  .frontPageIntroSection {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .servicesButtonDiv {
+    margin-bottom: 30px;
+    height: 350px;
+    width: 65%;
+  }
+
+  .servicesButton {
+    height: 100%;
+    width: 95%;
+  }
+
+
+  .drFajardoFrontPicture {
+    width: 100%;
+    height: 600px;
+  }
+  .centerAligner {
+    flex-direction: row;
+  }
+  .centerAlignerText{
+    width: 85%;
+  }
+  .frontPageButtonCarouselDiv {
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whyChooseLVECarousel {
+    width: 100% !important;
+    /* height: 400px !important; */
+  }
+
+  .carousel-caption {
+    color: black !important;
+  }
+  
+  .testimonialHeader {
+    font-size: 50px;
+  }
+
+  .carouselContainer {
+    width: 50%;
+    line-height: 0.5;
+
+  }
+
+  .frontPageButtonsDiv {
+    width: 50%;
+    height: 100%;
+  }
+
+  .whyChooseLVECarouselImage {
+    height: 650px !important; 
+  }
+
+
+  .frontPageHeadingText {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .frontPageServicesMain {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    height: 950px;
+  }
+
+
+  /* Fee Section CSS */
+  .feeSectionThumbnailDiv {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .feeSectionButton {
+    width: 30%;
+    height: 100%;
+  }
+  .feeSectionTextOverlay {
+    width: 50%;
+
+  }
+  .socialMediaDiv {
+    width: 70%;
+    height: 550px;
+  }
+  .socialMediaTitle {
+    font-size: 55px;
+  }
+
+
+  /* End Fee Section CSS */
+
+  .linkThumbnailDiv {
+    padding: 30px;
+  }
+  
+  /* end FrontPage CSS */
+
+  }
+
+  @media (min-width: 1000px){
+  }
+
+
+  /* for Iphone X, who the hell designed the dimensions for this monstrosity? */
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .background-video {
+          height: 65vh;
+        }
+
+        .videoButtonDiv {
+          transform: translateY(-95px) !important;
+        }
+        .mobileMenu {
+          width: 90vh;
+        }
+     }
+
+

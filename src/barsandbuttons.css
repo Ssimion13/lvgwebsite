@@ -1,0 +1,300 @@
+/* buttons */
+.btn-secondary {
+  background-color: rgb(25,25,25) !important;
+  border-color: black !important;
+}
+
+/* end buttons */
+
+
+/* Topbar CSS */
+.logoHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  .topbarEmptyLeft {
+    width: 20%
+  }
+
+  .logo {
+    /* padding-left: 20px;
+    height: 100px; */
+    width: 200px;
+  }
+  
+  .topbarMain {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 100px;
+  }
+
+  .topbarTransparent {
+    background-color: transparent;
+    transition-duration: 1s;
+  }
+
+  .topbarOpaque {
+    background-color: rgb(25,25,25);
+    transition-duration: 1s;
+  }
+
+  .topbarLinks{
+    font-size: 22px !important;
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-family: "Gill Sans MT" !important;
+}
+
+  .hamburgerMenuDropdown {
+    border-bottom: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .hamburgerMenuLink {
+    color: white !important;
+    font-size: 22px;
+    padding-left: 15px;
+  }
+  .hamburgerMenuTriangle {
+    color: white;
+    font-size: 16px;
+    padding-right: 22px;
+  }
+  .hamburgerMenuInnerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topbarLinksOpaque{
+    font-size: 22px !important;
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-family: 'Gill Sans MT', sans-serif !important;
+  }
+  .topbarLinks:hover{
+    opacity: 0.50;
+    transition-duration: 0.35s;
+    text-decoration: none !important;
+  }
+  .topbarLinksOpaque:hover{
+    opacity: 0.50;
+    transition-duration: 0.35s;
+    text-decoration: none !important;
+  }
+  
+  .buttonHolder {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+  }
+
+
+  .hamburgerButton {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 10;
+    width: 80px !important;
+    height: 80px !important;
+    background-color: rgb(25,25,25) !important;
+    font-size: 45px !important;
+    z-index: 100 !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburgerMenuButton {
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+  }
+
+  .mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(25,25,25);
+    position: fixed;
+    left: 0px;
+    top: 95px;
+    opacity: 0.95;
+    z-index: 15;
+  }
+
+  .mobileMenuDiv {
+    /* color: white; */
+    background-color: rgb(25,25,25);
+    width: 100%;
+    height: 50%;
+    font-size: 30px;
+  }
+
+  .nothing {
+    /* lol this is lazy as fuck i am a baddie.... */
+    display: none;
+  }
+
+  .topbarButton {
+    padding: .75rem 1rem !important;
+  }
+
+  .topBarDropdownMenu {
+    background-color: rgb(25,25,25) !important;
+  }
+
+  .dropdownButton {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .topBarDropdownLink {
+    color: white !important;
+  }
+
+  .topBarDropdownLink:hover {
+    color: #195fd8 !important;
+  }
+
+  /* end topbar CSS */
+  
+  /* Navbar CSS */
+  
+  .navbarMain {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbarButton {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .navbarButton:hover {
+    background-color: rgb(199, 199, 199);
+  }
+  
+  
+  /* end Navbar CSS */
+  /* Bottom Buttons */
+  .bottomButtonsMain {
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  .bottomButton1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3364b7;
+    
+  }
+  .bottomButton2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 181, 148);
+  }
+/* End Bottom Buttons */
+
+@media (min-width: 850px){
+    /* topbar css */
+    .topbarEmptyLeft {
+        width: 5%
+    }
+    .topbarEmptyRight {
+      width: 20%;
+    }
+    .logoHolder {
+        width: 20%;
+    }
+    
+    .topbarLinks{
+        font-size: 22px !important;
+        color: white !important;
+        background-color: transparent !important;
+        border: none !important;
+        font-family: 'Gill Sans MT', sans-serif !important;
+    }
+    .topbarLinksOpaque{
+      font-size: 22px !important;
+      color: white !important;
+      background-color: transparent !important;
+      border: none !important;
+      font-family: 'Gill Sans MT', sans-serif !important;
+      font-weight: bolder;
+
+    }
+    .topbarLinks:hover{
+      opacity: 0.50;
+      transition-duration: 0.35s;
+      text-decoration: none !important;
+    }
+    .topbarLinksOpaque:hover{
+      opacity: 0.50;
+      transition-duration: 0.35s;
+      text-decoration: none !important;
+    }
+    
+    .topbarMain {
+        padding-bottom: 5px; 
+        padding-top: 5px; 
+        height: 120px;
+    }
+    
+    .logo {
+        width: 95%;
+        height: 160px;
+    }
+    /* end topbar css */
+}
+
+@media (min-width: 600px){
+  
+  /* .hamburgerButton {
+    position: fixed;
+    top: 10px;
+    right: 2%;
+    z-index: 10;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important; 
+   background-color: rgb(25,25,25) !important; 
+    font-size: 60px !important;
+    z-index: 100 !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+}
+
